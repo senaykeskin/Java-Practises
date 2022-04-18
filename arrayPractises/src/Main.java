@@ -1,5 +1,4 @@
-import javax.sound.midi.Soundbank;
-import java.sql.SQLOutput;
+import java.util.Arrays;
 
 public class Main {
 
@@ -41,28 +40,42 @@ public class Main {
             }
         }
 
+        System.out.println("\n****************************\n");
 
 
 
+        //ÖRNEK 3
+        System.out.println("ÖRNEK 3: ");
+        int [] karisikSayilar = {9,5,56,34,4,3,76,6};
+        int [] karisikSayilar2 = {9,5,56,34,4,3,76,6};
+        int []  siraliDizi = new int[karisikSayilar.length];
+        System.out.print("sıralı dizi: ");
+        System.arraycopy(karisikSayilar, 0, siraliDizi, 0, karisikSayilar.length);
+
+        Arrays.sort(siraliDizi);
+        diziYazdir(siraliDizi);
+
+        System.out.print("\nkarışık sayılar: ");
+        diziYazdir(karisikSayilar);
+        
+
+        if (Arrays.equals(karisikSayilar, karisikSayilar2)) {
+            System.out.println("\ndiziler eşit");
+        } else {
+            System.out.println("\ndiziler eşit değil");
+        }
+        
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        
 
     }
+
+    private static void diziYazdir(int [] yazilacakDizi) {
+        for (int sayi: yazilacakDizi) {
+            System.out.print(sayi + "\t");
+        }
+    }
+    
+    
 }
