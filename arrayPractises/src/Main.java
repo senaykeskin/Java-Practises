@@ -64,11 +64,31 @@ public class Main {
         } else {
             System.out.println("\ndiziler eşit değil");
         }
-        
 
 
-        
+        System.out.println("\n***************************\n");
 
+        // ÖRNEK 4
+        System.out.println("ÖRNEK 4");
+
+        int [] sayilar2 = {1,2,3,4,5,6,7};
+
+
+        diziYerDegistir(sayilar2);
+        System.out.println("dizi yer değiştirdikten sonra: ");
+        diziYazdir(sayilar2);
+
+
+    }
+
+    private static void diziYerDegistir(int [] dizi) {
+        for (int i= dizi.length - 1; i>0; i--) {
+            int rastgeleSayi= (int)(Math.random() * (i+1));
+
+            int gecici = dizi[i];
+            dizi[i] = dizi[rastgeleSayi];
+            dizi[rastgeleSayi] = gecici;
+        }
     }
 
     private static void diziYazdir(int [] yazilacakDizi) {
