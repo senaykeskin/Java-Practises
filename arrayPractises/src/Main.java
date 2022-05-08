@@ -151,33 +151,36 @@ public class Main {
         //ORNEK 8
         System.out.println("\n******************************\n");
 
+        String [] kartTurleri = {"Kupa", "Maça", "Karo", "Sinek"};
+        String [] kartNumaralari = {"As" , "1" , "2" , "3" , "4" , "5" , "6" , "7" , "8" , "9" , "J", "Q" ,"K"};
         int [] deste = new int[52];
 
-        for (int i=0; i< deste.length; i++) {
-            deste[i] = i;
+        desteyiGoster(deste, kartTurleri, kartNumaralari);
+
+
+
         }
-        diziYerDegistir(deste);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    private static void desteyiGoster(int[] deste, String[] kartTurleri, String[] kartNolari) {
+        String [] kartTuru = kartTurleri;
+        String [] kartNo = kartNolari;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     private static void selectionSortSiralama(int [] dizi) {
         for (int i=0 ; i<dizi.length -1; i++) {
             // en küçük elemanın indexinin bulunması
