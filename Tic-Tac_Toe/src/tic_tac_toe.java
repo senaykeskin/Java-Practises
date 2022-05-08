@@ -33,6 +33,7 @@ public class tic_tac_toe {
     private void moveCommand() {
         String letter = new String();
         Scanner scan = new Scanner(System.in);
+        //For Checking Coordinate Validity
         while(true) {
             System.out.println("Enter a Coordinate (like a1)");
             letter = scan.nextLine();
@@ -44,6 +45,7 @@ public class tic_tac_toe {
         }
         //ASCII table
         board[letter.charAt(0) % 97][letter.charAt(1) % 49] = (turn++ % 2==0) ?   'X' : 'O';
+
     }
     /**
      * For Checking End of Game
@@ -80,6 +82,4 @@ public class tic_tac_toe {
         }
         System.out.println("Game Over");
     }
-
-
 }
