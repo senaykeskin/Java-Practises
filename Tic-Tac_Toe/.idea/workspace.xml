@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca6f1638-deee-462e-83f0-62d4044cebef" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tic_tac_toe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tic_tac_toe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tic-Tac_Toe/tic_tac_toe.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tic-Tac_Toe/tic_tac_toe.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,5 +127,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
